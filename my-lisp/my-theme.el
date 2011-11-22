@@ -1,6 +1,7 @@
 ;;; Theme - Sunburst for Emacs by AlexMax
 
 ; emacs faces
+(set-face-background 'cursor "#00ff00")
 (set-face-foreground 'default "#f8f8f8")
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "blue")
