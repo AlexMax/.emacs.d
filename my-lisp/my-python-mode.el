@@ -8,7 +8,7 @@
 ; pymacs
 (setenv "PYTHONPATH"
 	(concat
-	 (concat user-emacs-directory (convert-standard-filename "site-packages/"))
+	 (expand-file-name (concat user-emacs-directory (convert-standard-filename "site-packages/")))
 	 path-separator
 	 (getenv "PYTHONPATH")))
 
