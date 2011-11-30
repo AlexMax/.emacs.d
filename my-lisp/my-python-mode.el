@@ -1,5 +1,4 @@
 ; python-mode
-(require 'python-mode)
 (add-hook 'python-mode-hook
 	  (lambda ()
 	    (setq whitespace-style (delq 'indentation whitespace-style))
@@ -13,8 +12,5 @@
 	 (getenv "PYTHONPATH")))
 
 (require 'pymacs)
-
-; pycomplete
-(require 'pycomplete)
 
 (provide 'my-python-mode)

@@ -1,5 +1,17 @@
 ;;; Theme - Sunburst for Emacs by AlexMax
 
+;; Base colors as defined in the original theme
+; Background: #000000 (Black)
+; Foreground: #F8F8F8 (Alabaster)
+;    Comment: #AEAEAE (Silver Chalice)
+;   Constant: #3387CC (Mariner)
+;     Entity: #89BDFF (Malibu)
+;    Keyword: #E28964 (Terracotta)
+;    Storage: #99CF50 (Conifer)
+;     String: #65B042 (Apple)
+;    Support: #9B859D (Mamba)
+;   Variable: #3E87E3 (Royal Blue)
+
 ; emacs faces
 (set-face-background 'cursor "#00ff00")
 (set-face-foreground 'default "#f8f8f8")
@@ -23,6 +35,7 @@
 	    (set-face-background 'diff-removed "#420e09")))
 
 ; font-lock faces
+(set-face-foreground 'font-lock-builtin-face "#dad085")
 (set-face-foreground 'font-lock-comment-face "#aeaeae")
 (set-face-foreground 'font-lock-constant-face "#3387cc")
 (set-face-foreground 'font-lock-keyword-face "#e28964")
@@ -34,17 +47,12 @@
 (set-face-foreground 'font-lock-warning-face "#fd5ff1")
 (set-face-background 'font-lock-warning-face "#562d56") ; 0xbf opacity
 
-; python-mode faces
-(set-face-foreground 'py-builtins-face "#dad085")
-(set-face-foreground 'py-class-name-face "#89bdff")
-(set-face-foreground 'py-decorators-face "#9b859d")
-(set-face-foreground 'py-exception-name-face "#9b859d")
-(set-face-foreground 'py-pseudo-keyword-face "#3387cc")
-
 ; whitespace faces
 (set-face-foreground 'whitespace-newline "#555555")
 (set-face-foreground 'whitespace-space "#555555")
 (set-face-background 'whitespace-space nil)
+(set-face-foreground 'whitespace-tab "#555555")
+(set-face-background 'whitespace-tab nil)
 
 (when window-system
   (set-face-background 'default "black")
