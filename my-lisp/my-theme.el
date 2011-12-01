@@ -18,7 +18,7 @@
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "blue")
 (set-face-inverse-video-p 'mode-line nil)
-(set-face-background 'region "#ddf0ff") ; 0x33 opacity
+(set-face-background 'region "#2c3033") ; #ddf0ff @ 0x33
 
 ; diff faces
 (add-hook 'diff-mode-hook
@@ -34,6 +34,35 @@
 	    (set-face-foreground 'diff-removed "#f8f8f8")
 	    (set-face-background 'diff-removed "#420e09")))
 
+; ediff faces
+(add-hook 'ediff-load-hook
+	  (lambda ()
+	    (set-face-foreground ediff-current-diff-face-A nil)
+	    (set-face-background ediff-current-diff-face-A "#420e09")
+	    (set-face-foreground ediff-even-diff-face-A "#aeaeae")
+	    (set-face-background ediff-even-diff-face-A nil)
+	    (set-face-foreground ediff-fine-diff-face-A nil)
+	    (set-face-background ediff-fine-diff-face-A "#613b3a")
+	    (set-face-foreground ediff-odd-diff-face-A "#aeaeae")
+	    (set-face-background ediff-odd-diff-face-A nil)
+	    (set-face-foreground ediff-current-diff-face-B nil)
+	    (set-face-background ediff-current-diff-face-B "#253b22")
+	    (set-face-foreground ediff-even-diff-face-B "#aeaeae")
+	    (set-face-background ediff-even-diff-face-B nil)
+	    (set-face-foreground ediff-fine-diff-face-B nil)
+	    (set-face-background ediff-fine-diff-face-B "#4a5f4e")
+	    (set-face-foreground ediff-odd-diff-face-B "#aeaeae")
+	    (set-face-background ediff-odd-diff-face-B nil)
+	    (set-face-foreground ediff-current-diff-face-C nil)
+	    (set-face-background ediff-current-diff-face-C "#4a410d")
+	    (set-face-foreground ediff-even-diff-face-C "#aeaeae")
+	    (set-face-background ediff-even-diff-face-C nil)
+	    (set-face-foreground ediff-fine-diff-face-C nil)
+	    (set-face-background ediff-fine-diff-face-C "#67643d")
+	    (set-face-foreground ediff-odd-diff-face-C "#aeaeae")
+	    (set-face-background ediff-odd-diff-face-C nil)
+	    ))
+
 ; font-lock faces
 (set-face-foreground 'font-lock-builtin-face "#dad085")
 (set-face-foreground 'font-lock-comment-face "#aeaeae")
@@ -45,7 +74,7 @@
 (set-face-foreground 'font-lock-type-face "#99cf50")
 (set-face-foreground 'font-lock-variable-name-face "#3e87e3")
 (set-face-foreground 'font-lock-warning-face "#fd5ff1")
-(set-face-background 'font-lock-warning-face "#562d56") ; 0xbf opacity
+(set-face-background 'font-lock-warning-face "#402140") ; #562d56 @ 0xbf
 
 ; whitespace faces
 (set-face-foreground 'whitespace-newline "#555555")
