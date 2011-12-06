@@ -1,8 +1,7 @@
 ; python-mode
 (add-hook 'python-mode-hook
 	  (lambda ()
-	    (setq whitespace-style (delq 'indentation whitespace-style))
-	    (whitespace-mode t)))
+	    (setq whitespace-style (delq 'indentation whitespace-style))))
 
 ; pymacs
 (setenv "PYTHONPATH"

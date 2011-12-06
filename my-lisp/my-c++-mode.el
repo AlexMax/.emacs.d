@@ -1,6 +1,6 @@
 ; c++-mode
 (add-hook 'c++-mode-hook
 	  (lambda ()
-	    (whitespace-mode t)))
+	    (setq whitespace-style (delq 'lines whitespace-style))))
 
 (provide 'my-c++-mode)
