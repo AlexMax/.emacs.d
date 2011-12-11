@@ -6,6 +6,7 @@
 (setq linum-format "%d ")
 (setq show-trailing-whitespace t)
 (setq-default truncate-lines t)
-(menu-bar-mode -1)
+(menu-bar-mode nil)
+(tool-bar-mode nil)
 
 (provide 'my-settings)

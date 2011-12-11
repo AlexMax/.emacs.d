@@ -85,6 +85,6 @@
 
 (when window-system
   (set-face-background 'default "black")
-  (set-face-font 'default "DejaVu_Sans_Mono-11"))
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono-11"))
 
 (provide 'my-theme)
