@@ -12,6 +12,7 @@
 ; libraries and their settings
 (require 'my-auto-complete)
 (require 'my-c++-mode)
+(require 'my-cmake-mode)
 (require 'my-ido)
 (require 'my-nav)
 (require 'my-python-mode)
