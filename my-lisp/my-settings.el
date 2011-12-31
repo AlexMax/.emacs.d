@@ -9,4 +9,9 @@
 (menu-bar-mode nil)
 (tool-bar-mode nil)
 
+; Windows
+(when (eq system-type 'windows-nt)
+  (setenv "PATH" (concat "C:\\MinGW\\msys\\1.0\\bin;"
+		       (getenv "PATH"))))
+
 (provide 'my-settings)
