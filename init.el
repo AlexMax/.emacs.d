@@ -16,6 +16,7 @@
 (require 'my-ido)
 (require 'my-nav)
 (require 'my-python-mode)
+(require 'my-uniquify)
 (require 'my-whitespace)
 
 ; emacs settings
