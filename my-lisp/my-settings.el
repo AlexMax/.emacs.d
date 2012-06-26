@@ -14,4 +14,11 @@
   (setenv "PATH" (concat "C:\\MinGW\\msys\\1.0\\bin;"
 		       (getenv "PATH"))))
 
+; fish
+(require 'grep)
+(when (string-match "/fish$" (getenv "SHELL"))
+  (grep-apply-setting
+   'grep-find-template
+   "find . <X> -type f <F> -exec grep <C> -nH -e <R> '{}' +"))
+
 (provide 'my-settings)
