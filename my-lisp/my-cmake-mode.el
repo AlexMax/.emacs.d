@@ -1,4 +1,4 @@
-; nav
+; cmake-mode
 (require 'cmake-mode)
 
 (setq auto-mode-alist

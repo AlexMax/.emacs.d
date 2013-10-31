@@ -5,10 +5,15 @@
 (add-to-list 'load-path (concat user-emacs-directory
 				(convert-standard-filename "my-lisp/")))
 
+; packages
+(require 'my-package)
+
 ; libraries and their settings
-(require 'my-auto-complete)
+(add-hook 'after-init-hook (lambda ()
+			     (require 'my-auto-complete)))
 (require 'my-c++-mode)
-(require 'my-cmake-mode)
+(add-hook 'after-init-hook (lambda ()
+			     (require 'my-cmake-mode)))
 (require 'my-ido)
 (require 'my-nav)
 (require 'my-python-mode)
