@@ -11,4 +11,10 @@
 (define-key function-key-map "\e[1;9C" [M-right])
 (define-key function-key-map "\e[1;9D" [M-left])
 
+; Cursor movement
+(global-set-key [M-up] 'beginning-of-buffer)
+(global-set-key [M-down] 'end-of-buffer)
+(global-set-key [M-right] 'move-end-of-line)
+(global-set-key [M-left] 'move-beginning-of-line)
+
 (provide 'my-keybinds)
